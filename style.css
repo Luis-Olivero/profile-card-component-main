@@ -13,7 +13,10 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -71,10 +74,12 @@ body {
     position: relative;
     top: -3rem;
     border: 6px solid #fff;
-}
+    margin-bottom: -3rem;
+  }
 
 .card__profile {
     text-align: center;
+    padding: 2em 0;
 }
 
 .card__profile--name {
@@ -92,13 +97,14 @@ body {
 
 .dark-blue {
     color: var(--Very-dark-desaturated-blue);
+    margin: 0;
 }
 
 .row {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    padding-bottom: 1em;
+    padding: 1.5em 0;
 }
 
 .attribution {
