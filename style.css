@@ -1,0 +1,114 @@
+:root {
+    /* Primary Colors */
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    /* Neutral */
+    --Dark-gray: hsl(0, 0%, 59%);
+    /* Font Family */
+    --Kumbh: 'Kumbh Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+    opacity: 0.4;
+}
+
+body {
+    background-image: url(images/bg-pattern-top.svg);
+    background-image: url(images/bg-pattern-bottom.svg);
+    background-color: var(--Dark-cyan);
+    font-family: var(--Kumbh);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 6em 1em;
+
+}
+
+
+.card {
+    background-color: #fff;
+    width: min(100%, 21.85rem);    
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+.card__img--top * {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card__img---top {
+    object-fit: cover;
+    width: 100%;
+}
+
+.card__img--picture * {
+    border-radius: 3rem;
+}
+
+.card__img--picture {
+    display: flex;
+    justify-content: center;
+}
+
+.card__profile {
+    text-align: center;
+}
+
+.card__profile--name {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.card__profile--age {
+    font-weight: 400;
+}
+
+.gray-accent {
+    color: var(--Dark-gray);
+}
+
+.dark-blue {
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.attribution {
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.attribution a {
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: var(--Dark-gray);
+}
+
+.attribution a:visited {
+    color: var(--Very-dark-desaturated-blue);
+}
