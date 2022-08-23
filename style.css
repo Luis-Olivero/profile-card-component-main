@@ -28,8 +28,10 @@ hr {
 }
 
 body {
-    background-image: url(images/bg-pattern-top.svg);
-    background-image: url(images/bg-pattern-bottom.svg);
+    background-color: hsl(185deg, 75%, 39%);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -500px left -400px, bottom -700px right -250px;
     background-color: var(--Dark-cyan);
     font-family: var(--Kumbh);
     font-size: 1rem;
@@ -38,9 +40,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     padding: 6em 1em;
-
 }
-
 
 .card {
     background-color: #fff;
@@ -59,12 +59,18 @@ body {
 }
 
 .card__img--picture * {
-    border-radius: 3rem;
+    border-radius: 6rem;
 }
 
 .card__img--picture {
     display: flex;
     justify-content: center;
+}
+
+.card__img--picture img {
+    position: relative;
+    top: -3rem;
+    border: 6px solid #fff;
 }
 
 .card__profile {
@@ -91,6 +97,8 @@ body {
 .row {
     display: flex;
     justify-content: space-evenly;
+    text-align: center;
+    padding-bottom: 1em;
 }
 
 .attribution {
